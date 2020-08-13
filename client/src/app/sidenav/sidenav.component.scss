@@ -1,0 +1,35 @@
+mat-toolbar {
+  background-color: #fff;
+}
+
+.close-button {
+  margin-left: -8px;
+}
+
+.app-title {
+  margin-left: 24px;
+}
+
+.mat-list-item {
+  height: 40px !important;
+}
+
+.mat-list-item span {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: lowercase;
+}
+
+//mat-icon {
+//  display: none;
+//}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .72);
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0 16px;
+}

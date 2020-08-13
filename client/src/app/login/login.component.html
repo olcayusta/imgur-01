@@ -1,0 +1,21 @@
+<div>
+  <div class="mini-title">login</div>
+</div>
+
+<form autocomplete="off" spellcheck="false" [formGroup]="form">
+  <div class="form-grid">
+    <mat-form-field>
+      <mat-label>E-posta</mat-label>
+      <input matInput formControlName="email">
+      <mat-error>Bir eposta adresi girin</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Şifre</mat-label>
+      <input matInput formControlName="password">
+      <mat-error>Bir şifre girin</mat-error>
+    </mat-form-field>
+    <div class="row-actions">
+      <button type="submit" mat-raised-button color="primary">ileri</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="sidenavOpen.emit(true)">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a routerLink="/" class="app-title-link">
+    <span class="app-title">IMGUR</span>
+<!--    <sup>beta 2</sup>-->
+  </a>
+  <span class="flex-spacer"></span>
+  <app-search-form></app-search-form>
+  <span class="flex-spacer"></span>
+  <div class="end">
+    <button mat-stroked-button color="primary" (click)="onUploadButtonClicked()">
+      <mat-icon>file_upload</mat-icon>
+      <span>yükle</span>
+    </button>
+    <a mat-button routerLink="/login">oturum aç</a>
+  </div>
+</mat-toolbar>

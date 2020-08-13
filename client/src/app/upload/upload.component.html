@@ -1,0 +1,5 @@
+<p>upload works!</p>
+
+<input type="file" #file (change)="onFilesAdded()" multiple>
+<button mat-raised-button (click)="addFiles()">ADD FILES</button>
+<button mat-raised-button (click)="closeDialog()">UPLOAD</button>

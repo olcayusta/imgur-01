@@ -1,0 +1,41 @@
+<div class="page-title-container">
+  <div class="mini-title">home</div>
+</div>
+
+<!--<input type="file" (change)="onChange($event)">-->
+
+<div class="masonry">
+
+
+  <div *ngFor="let item of masonry">
+    <div class="masonry-item my-card mat-elevation-z4">
+      <div class="img-shadow">
+        <img [src]="item.img" alt="">
+      </div>
+    </div>
+    <div class="details">
+      <div class="title">{{item.title}}</div>
+    </div>
+  </div>
+</div>
+
+<div class="my-container">
+
+  <!--  <h1>{{progress}}</h1>-->
+  <div *ngIf="file">
+    <div class="my-card mat-elevation-z4">
+      <div class="img-shadow">
+        <img class="preview-img" [src]="file" alt="xd">
+      </div>
+    </div>
+
+    <div class="upload-info">
+      <span class="filename-text">{{filename}}</span>
+      <span class="filename-type">{{filetype}}</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!--<app-upload></app-upload>-->

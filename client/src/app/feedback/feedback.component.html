@@ -1,0 +1,16 @@
+<div class="page-title-container">
+  <div class="mini-title">feedback</div>
+</div>
+
+<form autocomplete="off" spellcheck="false" [formGroup]="form">
+  <div class="form-grid">
+    <mat-form-field>
+      <mat-label>Açıklama</mat-label>
+      <textarea matInput formControlName="description" cdkTextareaAutosize></textarea>
+<!--      <mat-error>Bir eposta adresi girin</mat-error>-->
+    </mat-form-field>
+    <div class="row-actions">
+      <button type="submit" mat-raised-button color="primary">ileri</button>
+    </div>
+  </div>
+</form>
